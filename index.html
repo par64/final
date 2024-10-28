@@ -8,7 +8,14 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- font awesome -->
+    <!-- font awesome (для "фа" иконок и иконки меню гамбургер)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- header section -->
@@ -16,12 +23,12 @@
       <input type="checkbox" name="" id="toggler" />
       <label for="toggler" class="fas fa-bars"></label>
 
-      <a href="#" class="logo">Логотип (название)</a>
+      <a href="#" class="logo">Изделия ручной работы</a>
 
       <nav class="navbar">
         <a href="#home">О нас</a>
-        <a href="#contact">Контакты</a>
-        <a href="#temp">Как заказать?</a>
+        <a href="#products">Товары</a>
+        <a href="#how">Как заказать?</a>
       </nav>
     </header>
 
@@ -29,13 +36,26 @@
 
     <section class="home" id="home">
       <div class="content">
-        <h2>HOME - Приветственный текст на красивом фоне</h2>
+        <h3>Сделано руками - <span> Cделано с любовью  <span id="heart">❤</span></span></h3>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil maiores animi eum soluta cupiditate dolor aliquid doloremque veritatis,
+            porro debitis modi unde nostrum ducimus a quia explicabo totam. Repellat, dolore?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil maiores animi eum soluta cupiditate dolor aliquid doloremque veritatis,
+            porro debitis modi unde nostrum ducimus a quia explicabo totam. Repellat, dolore?
+        </p>
+        <a href="#products" class="btn">Посмотреть</a>
       </div>
     </section>
 
     <!-- products section -->
 
     <section class="products" id="products">
+
+        <h1 class="heading">Наши товары</h1>
+
       <div class="box-container">
         <div class="box">
           <div class="image">
