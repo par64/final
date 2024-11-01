@@ -1,0 +1,53 @@
+* Секция footer */
+
+.footer .box-container{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer .box-container .box a{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box span{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+
+/* media */
+@media (max-width: 990px){
+   
+    html{
+        font-size: 50%;
+    } 
+
+    section{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 450px){
+   
+    html{
+        font-size: 45%;
+    }    
+}
+
+

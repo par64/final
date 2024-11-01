@@ -28,110 +28,6 @@ section{
     padding: 2rem 9%;
 }
 
-.btn{
-    font-family: "Kaushan Script", cursive;
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: 5rem;
-    background: #333;
-    color: #fff;
-    padding: .9rem 3.5rem;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover{
-    background: var(--orange);
-}
-
-
-/* Секция header */
-
-header{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: #fff;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-header .logo{
-    font-family: "Kaushan Script", cursive;
-    font-size: 3rem;
-    color: #333;
-    font-weight: bolder;
-}
-header .navbar a{
-    font-family: "Kaushan Script", cursive;
-    font-size: 2rem;
-    padding: 0 1.5rem;
-    color: #666;
-}
-
-header .navbar a:hover{
-    color: var(--orange);
-}
-
-header #toggler{
-    display: none;
-}
-
-header .fa-bars{
-    font-size: 3rem;
-    color: #333;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .3);
-    display: none;
-}
-
-/* Секция home (она же о нас) */
-
-.home{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    background: url(images/vintage-4.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.home .content{
-    max-width: 50rm;
-}
-
-.home .content h3{
-    font-family: "Kaushan Script", cursive;
-    font-size: 4rem;
-    color: #333;
-}
-
-.home .content #heart {
-    color:#ff0000;
-  }
-
-.home .content span{
-    font-family: "Kaushan Script", cursive;
-    font-size: 4rem;
-    color: var(--orange);
-}
-
-.home .content p{
-    font-family: "Kaushan Script", cursive;
-    font-size: 2rem;
-    line-height: 1.5;
-    padding: 1rem 0;
-    color: #333;
-}
-
-
-
-
 
 
 /* Секция products */
@@ -172,8 +68,7 @@ header .fa-bars{
     transform: scale(1.1);
 }
 
-.products .box-container .box .content{
-    
+.products .box-container .box .content{ 
     padding: 2rem;
     text-align: center;
 }
@@ -191,28 +86,65 @@ header .fa-bars{
     padding-top: 1rem;
 }
 
-/* Секция footer */
 
-.footer .box-container{
+/* Секция details */
+
+.details .box-container{
+    padding: 8rem 3%;
+    
+}
+
+.details .box-container .box{
+    display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    flex: 1 1 0;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    position: relative;
 }
 
-.footer .box-container .box{
-    display: flex;
-    justify-content: space-around;
+
+.details .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding: 1rem;
 }
 
-.footer .box-container .box a{
-    color: #333;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+.details .box-container .box .image img{
+    height:40rem;
 }
 
-.footer .box-container .box a:hover{
+.details .box-container .box .price{
+    font-size: 2rem;
     color: var(--orange);
-    text-decoration: underline;
+    font-weight: 300;
+    font-weight: bolder;
+    padding: 2rem;
 }
+
+
+.details .box-container .content{
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.details .box-container .content h1{
+    font-family: "Kaushan Script", cursive;
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.details  .box-container .content p{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: #333;
+}
+
 
 
 
@@ -232,30 +164,10 @@ header .fa-bars{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 520px){
    
-    header .fa-bars{
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked ~ .navbar{      
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        display: block;
+    .details .box-container .box .image{
+        flex: 1;
     }
 }
 
@@ -264,18 +176,6 @@ header .fa-bars{
     html{
         font-size: 45%;
     }
-    .home .content h3{
-        font-size: 3rem;
-    }
-    
-    .home .content span{
-        font-size: 3rem;
-    }
-    
-    .home .content p{
-        font-size: 1.5rem;
-    }
-    
 }
 
 
