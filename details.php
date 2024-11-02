@@ -43,10 +43,62 @@
 
         </div>
 
-
     </section>
-    <?php include './reviews/reviews.php' ?>
+
+    <section class="review">
+
+        <div class="form-container">
+            <form id="reviewsForm" action="submit.php" method="POST">
+
+                <label for="product_id"></label>
+                <input type="hidden" id="product_id" name="product_id" value="<?php echo $product_id ?>" />
+
+                <div class="box">
+
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Имя" required />
+                        <div class="error" id="nameError"></div>
+                    </div>
+
+                    <div class="textarea-box">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Поделитесь своим мнением" required></textarea>
+                        <span class="error" id="messageError"></span>
+                        <button type="submit" class="btn">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="list">
+        <?php
+        $id = $_GET['details_id'];
+        $sql = "SELECT * FROM reviews WHERE product_id=$id";
+        $stmt = $pdo->query($sql);
+        $reviews = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+        foreach ($reviews as $review) {
+            $user_name = $review['user_name'];
+            $rev_message = $review['rev_message'];
+            $rev_date = $review['rev_date'];
+
+            echo '
+            <ul>
+                <li class="el">
+                    <h2>'.$user_name.' <span>'.$rev_date.'</span></h2>
+                    <div class="text" wrap="hard">'.$rev_message.'</div>
+                    
+                </li>
+            </ul>
+                ';
+        }
+        ?>
+        </div>
+        
+    </section>
+
     <?php include './footer/footer.php' ?>
+    <script src="reviews.js"></script>
 
 </body>
 

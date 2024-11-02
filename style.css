@@ -146,7 +146,111 @@ section{
 }
 
 
+.review {
+    display: flex;
+  }
 
+  
+  .review .form-container {
+    margin-left: 3%;
+    max-width: 55vh;
+    min-width: 30vh;
+    right: 20%;
+    left: 20%;
+  }
+  
+  .review .form-container .box {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+    /* flex: 1 0 40rem; */
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .review .form-container .box .name {
+    width: 100%;
+  }
+  
+  .review .form-container .box #name {
+    margin: 2rem 0 2rem 2rem;
+    border-bottom: solid 1px #333;
+  }
+  
+  .review .form-container .box .textarea-box {
+    flex: 1;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .review .form-container .box .textarea-box #message {
+    height: 10vh;
+    width: 100%;
+    min-width: 25vh;
+    resize: none;
+    overflow-y: auto;
+    border-bottom: solid 1px #333;
+  }
+  
+  .review .form-container .box #nameError {
+    margin-left: 2rem;
+    margin-top: -2rem;
+    color: var(--orange);
+  }
+  .review .form-container .box #messageError {
+    color: var(--orange);
+  }
+  
+  .btn {
+    font-family: "Kaushan Script", cursive;
+    /* display: inline-block; */
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    float: right;
+    /* font-size: 1.7rem; */
+  }
+  
+  .btn:hover {
+    background: var(--orange);
+  }
+  
+  .review .list {
+    padding: 0 3% 0 3%;
+    max-width: 66%;
+  }
+  
+  .review .list .el {
+    list-style-type: none;
+    min-height: 80px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+  }
+  
+  .review .list .el h2 {
+    color: var(--orange);
+    font-family: "Kaushan Script", cursive;
+  }
+
+  .review .list .el .text{
+    margin: .5rem;
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    font-family: "Kaushan Script", cursive;
+  }
+
+  .review .list .el span{
+    margin-left: 3rem;
+    color: #666;
+    font-size: .8rem;
+  }
+
+  
 
 
 /* media */
@@ -164,11 +268,15 @@ section{
     }
 }
 
-@media (max-width: 520px){
+@media (max-width: 590px){
    
     .details .box-container .box .image{
-        flex: 1;
+        flex: 1;    
     }
+
+    .review {
+        flex-wrap: wrap;
+      }
 }
 
 @media (max-width: 450px){
