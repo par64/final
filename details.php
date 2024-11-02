@@ -45,7 +45,7 @@
 
 
     </section>
-
+    <?php include './reviews/reviews.php' ?>
     <?php include './footer/footer.php' ?>
 
 </body>

@@ -20,7 +20,7 @@
                 <a href="index.php#home">О нас</a>
                 <a href="#">Как заказать?</a>
                 <a href="mailto:example@mail.ru">Email: example@mail.ru</a>
-                <a href="tel:+12-345-67-89">Тел: +12-345-67-89</a>
+                <a href="tel:+12-345-67-89">+12-345-67-89</a>
             </div>
 
         </div>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: "Kaushan Script", cursive;
+font-weight: 400;
+font-style: normal; */
+
+:root{
+    --orange:#d8792c;
+}
+
+
+.review{
+    display: flex;
+}
+
+.review .form-container{
+    margin-left: 3%;
+    max-width: 55vh;
+    min-width: 30vh;
+    right: 20%;
+    left: 20%;   
+}
+
+.review .form-container .box{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+    /* flex: 1 0 40rem; */
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.review .form-container .box .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.review .form-container .box #name{
+ margin: 2rem 0 2rem 2rem;
+ border-bottom: solid 1px #333;
+}
+
+.review .form-container .box .rating{
+    margin: 2rem;
+   
+    border-bottom: solid 1px #333;
+}
+
+.review .form-container .box .textarea-box{
+    flex: 1;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .form-container .box .textarea-box #message{
+    height: 10vh;
+    width: 100%;
+    min-width: 25vh;
+    resize: none;
+    overflow-y: auto;
+    border-bottom: solid 1px #333;
+}
+
+.btn{
+    font-family: "Kaushan Script", cursive;
+    /* display: inline-block; */
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #fff;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    float: right;
+    /* font-size: 1.7rem; */
+}
+
+.btn:hover{
+    background: var(--orange);
+}
+
+.review .list{
+    padding: 0 3% 0 3%;
+    max-width: 66%;
+}
+
+.review .list .el{
+    list-style-type: none;
+    min-height: 80px;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: .5rem;
+}
+
+.review .list .el h3{
+    color: var(--orange);
+    font-family: "Kaushan Script", cursive;
+}
+
+
+
+/* media */
+@media (max-width: 990px){
+   
+    html{
+        font-size: 50%;
+    } 
+
+}
+
+
+@media (max-width: 590px){
+    .review{
+        flex-wrap: wrap;
+    }
+}
+
+
