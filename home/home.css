@@ -1,7 +1,6 @@
-/* Секция home (она же о нас) */
 
 .btn{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -26,13 +25,14 @@
 }
 
 .home .content{
-    max-width: 50rm;
+    max-width: 70%;
 }
 
 .home .content h3{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 4rem;
     color: #333;
+    margin-bottom: 3rem;
 }
 
 .home .content #heart {
@@ -40,17 +40,21 @@
   }
 
 .home .content span{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 4rem;
     color: var(--orange);
 }
 
 .home .content p{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 2rem;
     line-height: 1.5;
     padding: 1rem 0;
     color: #333;
+}
+
+.home .content .btn {
+margin-top: 5rem;
 }
 
 /* media */

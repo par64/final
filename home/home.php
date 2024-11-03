@@ -11,20 +11,19 @@
 </head>
 
 <body>
-    <!-- home section -->
 
     <section class="home" id="home">
         <div class="content">
             <h3>Сделано руками - <span> Cделано с любовью <span id="heart">❤</span></span></h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nihil maiores animi eum soluta cupiditate dolor aliquid doloremque veritatis,
-                porro debitis modi unde nostrum ducimus a quia explicabo totam. Repellat, dolore?
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nihil maiores animi eum soluta cupiditate dolor aliquid doloremque veritatis,
-                porro debitis modi unde nostrum ducimus a quia explicabo totam. Repellat, dolore?
-            </p>
+            <p>Тут занимаются ручным изготовлением высококачественных плетёных изделий из натуральных материалов.
+                Мы предлагаем широкий ассортимент уникальных и стильных плетёных элементов декора, таких как вазы,
+                кашпо и другие аксессуары.</p>
+            <p>Мы используем только качественные природные материалы и применяем традиционные методы плетения.
+                Благодаря этому наши изделия отличаются прочностью, долговечностью и экологичностью.</p>
+            <p>Мы стремится удовлетворить потребности своих клиентов, предлагая индивидуальный подход 
+                и возможность создания уникальных предметов по вашим пожеланиям. </p>
+            
             <a href="#products" class="btn">Посмотреть</a>
         </div>
     </section>

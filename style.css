@@ -5,6 +5,11 @@
 font-weight: 400;
 font-style: normal; */
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+/* font-family: "Itim", cursive;
+font-weight: 400;
+font-style: normal; */
+
 :root{
     --orange:#d8792c;
 }
@@ -32,7 +37,7 @@ section{
 
 /* Секция products */
 .products .heading{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 3rem;
     padding: 1.5rem;
     color: #333;
@@ -74,7 +79,7 @@ section{
 }
 
 .products .box-container .box .content h3{
-    font-family: "Kaushan Script", cursive;
+  font-family: "Itim", cursive;
     font-size: 1.5rem;
     color: #333;
 }
@@ -133,13 +138,13 @@ section{
 
 
 .details .box-container .content h1{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 3rem;
     color: var(--orange);
 }
 
 .details  .box-container .content p{
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
     font-size: 2rem;
     padding: 1.5rem;
     color: #333;
@@ -203,8 +208,8 @@ section{
     color: var(--orange);
   }
   
-  .btn {
-    font-family: "Kaushan Script", cursive;
+  .btn-forms {
+    font-family: "Itim", cursive;
     /* display: inline-block; */
     margin-top: 1rem;
     border-radius: 1rem;
@@ -216,7 +221,7 @@ section{
     /* font-size: 1.7rem; */
   }
   
-  .btn:hover {
+  .btn-forms:hover {
     background: var(--orange);
   }
   
@@ -234,14 +239,14 @@ section{
   
   .review .list .el h2 {
     color: var(--orange);
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
   }
 
   .review .list .el .text{
     margin: .5rem;
     overflow-wrap: break-word;
     font-size: 1.2rem;
-    font-family: "Kaushan Script", cursive;
+    font-family: "Itim", cursive;
   }
 
   .review .list .el span{

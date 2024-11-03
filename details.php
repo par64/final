@@ -65,7 +65,7 @@
                         <label for="message"></label>
                         <textarea id="message" name="message" placeholder="Поделитесь своим мнением" required></textarea>
                         <span class="error" id="messageError"></span>
-                        <button type="submit" class="btn">Отправить</button>
+                        <button type="submit" class="btn-forms">Отправить</button>
                     </div>
                 </div>
             </form>

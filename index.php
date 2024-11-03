@@ -44,13 +44,13 @@
 
         echo '<div class="box">
                   <div class="image">
-                  <a href="details.php?details_id='.$product_id.' ">
-                    <img src=' . $product_image.' alt="product image" />
+                  <a href="details.php?details_id=' . $product_id . ' ">
+                    <img src=' . $product_image . ' alt="product image" />
                    </a>
                   </div>
                     <div class="content">
-                      <h3>'.$product_name.'</h3>
-                      <div class="price">'.$product_price.'р.</div>
+                      <h3>' . $product_name . '</h3>
+                      <div class="price">' . $product_price . 'р.</div>
                     </div>
                 </div>';
       }
@@ -58,24 +58,6 @@
 
     </div>
   </section>
-
-  <section id="contacts">
-      <h2>Контакты</h2>
-      <form id="contactForm" action="submit.php" method="POST">
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required />
-        <span class="error" id="nameError"></span>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <span class="error" id="emailError"></span>
-
-        <label for="message">Сообщение:</label>
-        <textarea id="message" name="message" required></textarea>
-        <span class="error" id="messageError"></span>
-
-        <button type="submit">Отправить</button>
-      </form>
 
   <?php include './footer/footer.php' ?>
 
