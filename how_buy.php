@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIY store</title>
-    
 
+    <!-- Фавикон -->
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="site.webmanifest" />
 
@@ -45,22 +45,21 @@
             font-family: "Itim", cursive;
             font-size: 2rem;
             line-height: 1.5;
-            margin-left: 4rem;            
+            margin-left: 4rem;
             padding: .5rem 0;
             color: var(--orange);
         }
 
-        .page .content .contacts{
+        .page .content .contacts {
             margin-top: 2rem;
         }
 
-        .page .content .contacts p{
+        .page .content .contacts p {
             font-family: "Itim", regular;
             font-size: 3rem;
             line-height: 1.5;
             color: #973700;
         }
-
     </style>
 
 </head>
@@ -79,8 +78,8 @@
             <p>После получения товара проверьте его целостность и соответствие описанию.</p>
             <p>Если всё в порядке, оплатите оставшуюся сумму.</p>
             <div class="contacts">
-            <p>Email: &nbsp &nbsp &nbsp &nbsp example@mail.ru</p>
-            <p>tel: &nbsp &nbsp &nbsp &nbsp  &nbsp +12-345-67-89</p>
+                <p>Email: &nbsp &nbsp &nbsp &nbsp example@mail.ru</p>
+                <p>tel: &nbsp &nbsp &nbsp &nbsp &nbsp +12-345-67-89</p>
             </div>
 
 

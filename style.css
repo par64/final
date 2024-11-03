@@ -1,10 +1,5 @@
 /* Общие */
 
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/* font-family: "Kaushan Script", cursive;
-font-weight: 400;
-font-style: normal; */
-
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 /* font-family: "Itim", cursive;
 font-weight: 400;
@@ -150,12 +145,11 @@ section{
     color: #333;
 }
 
-
+/* Секция reviews */
 .review {
     display: flex;
   }
 
-  
   .review .form-container {
     margin-left: 3%;
     max-width: 55vh;
@@ -210,7 +204,6 @@ section{
   
   .btn-forms {
     font-family: "Itim", cursive;
-    /* display: inline-block; */
     margin-top: 1rem;
     border-radius: 1rem;
     background: #333;
@@ -218,7 +211,6 @@ section{
     padding: 0.5rem 1rem;
     cursor: pointer;
     float: right;
-    /* font-size: 1.7rem; */
   }
   
   .btn-forms:hover {

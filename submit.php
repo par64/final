@@ -28,11 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             echo "Отзыв успешно добавлен!";
             
-            // перенаправляем...
+            // перенаправляем (обновляем страницу продукта с новым сообщением)
             header("Location: details.php?details_id='$product_id'");
             exit();
      
-             
         } catch (PDOException $e) { 
             echo "Ошибка при записи в базу данных: " . $e->getMessage(); 
         } 
