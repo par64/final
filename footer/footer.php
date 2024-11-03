@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <!-- footer section -->
+    
     <section class="footer">
 
         <div class="box-container">

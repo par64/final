@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIY store</title>
 
+    
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -71,30 +77,30 @@
             </form>
         </div>
         <div class="list">
-        <?php
-        $id = $_GET['details_id'];
-        $sql = "SELECT * FROM reviews WHERE product_id=$id";
-        $stmt = $pdo->query($sql);
-        $reviews = $stmt->fetchall(PDO::FETCH_ASSOC);
+            <?php
+            $id = $_GET['details_id'];
+            $sql = "SELECT * FROM reviews WHERE product_id=$id";
+            $stmt = $pdo->query($sql);
+            $reviews = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-        foreach ($reviews as $review) {
-            $user_name = $review['user_name'];
-            $rev_message = $review['rev_message'];
-            $rev_date = $review['rev_date'];
+            foreach ($reviews as $review) {
+                $user_name = $review['user_name'];
+                $rev_message = $review['rev_message'];
+                $rev_date = $review['rev_date'];
 
-            echo '
+                echo '
             <ul>
                 <li class="el">
-                    <h2>'.$user_name.' <span>'.$rev_date.'</span></h2>
-                    <div class="text" wrap="hard">'.$rev_message.'</div>
+                    <h2>' . $user_name . ' <span>' . $rev_date . '</span></h2>
+                    <div class="text" wrap="hard">' . $rev_message . '</div>
                     
                 </li>
             </ul>
                 ';
-        }
-        ?>
+            }
+            ?>
         </div>
-        
+
     </section>
 
     <?php include './footer/footer.php' ?>
